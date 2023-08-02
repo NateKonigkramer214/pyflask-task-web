@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <style>
+  * {
+	box-sizing: border-box;
+  }
+button {
+	background-color: rebeccapurple;
+	border-radius: 5px;
+	box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.15);
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	position: relative;
+	transition: transform 0.1s linear, box-shadow 0.1s linear;
+	z-index: 10;
+}
+
+button:active {
+	transform: translate(4px, 4px);
+	box-shadow: 0 0 0 rebeccapurple;
+}
+
+button:focus {
+	outline: none;
+}
+
+.particle {
+	--x: 0;
+	--y: 0;
+	background-color: rebeccapurple;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 5px;
+	width: 5px;
+	z-index: -1;
+}
+
+.particle.move {
+	animation: move 1000ms linear forwards;
+}
+
+@keyframes move {
+	to {
+		transform: translate(var(--x), var(--y));
+	}
+	
+	95% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+li {
+  transition: all 0.3s ease-in;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <!--Header-->
+  <section class="container">
+    <header>
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <div class="class=" float-sm-start">
+              <img src="/HTML/images/logo3.png" alt="Logo" width="150"
+                height="100">
+            </div>
+            <span class="fs-4" style="color: #4ecca3;">First Class Interiors</span>
+          </a>
+          <!--Navbar-->
+          <nav class="navbar navbar-expand navbar-light col-lg-12" style="padding-left: 50px;">
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/HTML/home.html">Home<span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/contact_us.html">Contact
+                  Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/shop.html">Shop</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </header>
+<section class="mb-4">
+  <h2 class="h1-responsive font-weight-bold text-center my-4" id="CHANGE_H" onclick="changeheading()">Contact us</h2>
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Contact us bellow.</p>
+
+  <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="md-form mb-0" style="padding-bottom: 20px ;">
+                          <input type="text" id="name" name="name" class="form-control" placeholder="Enter Full Name">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control" placeholder="Enter email">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0" style="padding-bottom: 20px ;">
+                          <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12" style="padding-bottom:20px;">
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Message"></textarea>
+                      </div>
+                  </div>
+              </div>
+          </form>
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" id="btn">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0" id="navinfo">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>12 Queen Street, Auckland</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 27 2599174</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>CaptivateInteriors@outlook.com</p>
+              </li>
+              <li><i class="fas fa-fax mt-4 fa-2x"></i>
+                <p>555-123-4567</p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+      <!--Footer-->
+      <div class="container my-5">
+
+        <footer class="text-center text-lg-start" style="background-color: #3F4E4F;">
+          <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4DCCF">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4DCCF;">
+              <i class="fab fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4DCCF">
+              <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn  btn-lg btn-floating mx-2" style="background-color: #E4DCCF">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </div>
+          <!-- Copyright -->
+          <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="#">Captive Interiors</a>
+          </div>
+        </footer>
+      </div>
+  <script>
+    $('#navinfo li').hover(function() {
+
+      $(this).css('padding-left', '100px');
+    }, function() {
+      $(this).css('padding-left', '0');
+    })
+    //Change the fontsize and font color of contact us heading. :D
+    function changeheading(){
+	      var Change_heading = document.getElementById("CHANGE_H");
+	      Change_heading.style.fontSize = "60px";
+	      Change_heading.style.color = "#3FA796";
+      }
+      //Align right function. 
+      //Needs work align right. 
+      function right(){
+        var right = document.getElementById("righthover");
+        right.style.textAlign = "right";
+      }
+
+const btn = document.getElementById('btn');
+//fireworks
+btn.addEventListener('click', () => {
+	const particles = [];
+	const color = randomColor();
+	const particle = document.createElement('span');
+	particle.classList.add('particle', 'move');
+	const { x, y } = randomLocation();
+	particle.style.setProperty('--x', x);
+	particle.style.setProperty('--y', y);
+	particle.style.background = color;
+	btn.style.background = color;
+	btn.appendChild(particle)
+	particles.push(particle);
+	setTimeout(() => {
+		for(let i=0; i<100; i++) {
+			const innerP = document.createElement('span');
+			innerP.classList.add('particle', 'move');
+			innerP.style.transform = `translate(${x}, ${y})`;
+			const xs = Math.random() * 200 - 100 + 'px';
+			const ys = Math.random() * 200 - 100 + 'px';
+			innerP.style.setProperty('--x', `calc(${x} + ${xs})`);
+			innerP.style.setProperty('--y', `calc(${y} + ${ys})`);
+			innerP.style.animationDuration = Math.random() * 300 + 200 + 'ms';
+			innerP.style.background = color;
+			btn.appendChild(innerP);
+			particles.push(innerP)
+		}
+		setTimeout(() => {
+			particles.forEach(particle => {
+				particle.remove();
+			})
+		}, 1000)
+	}, 1000);
+});
+function randomLocation() {
+	return {
+		x: Math.random() * window.innerWidth - window.innerWidth / 2 + 'px',
+		y: Math.random() * window.innerHeight - window.innerHeight / 2 + 'px',
+	}
+}
+function randomColor() {
+	return `hsl(${Math.floor(Math.random() * 361)}, 100%, 50%)`;
+}
+</script>
+</body>
+</html>

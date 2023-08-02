@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+</head>
+
+<!-- Test LOL -->
+
+
+<!-- Test shuit -->
+
+
+<body>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <!--Header-->
+  <section class="container">
+    <header>
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <div class=" float-sm-start">
+              <img src="/HTML/images/logo3.pn" alt="Logo" width="150" height="100">
+            </div>
+            <span class="fs-4" style="color: #4ecca3;">First Class Interiors</span>
+          </a>
+          <!--Navbar-->
+          <nav class="navbar navbar-expand navbar-light col-lg-12" style="padding-left: 50px;">
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/HTML/home.html">Home<span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/contact_us.html">Contact
+                  Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/shop.html">Shop</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </header>
+  </section>
+  <!--Ceo-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <!--Image-->
+        <div class="col">
+          <h1 id="CEO_NAME" class="display-5 text-center pt-2">John Look</h1>
+          <img id="CEO_IMG" class="rounded mx-auto d-block" src="/HTML/images/ceo.jpg" alt="CEO Image" height="200">
+        </div>
+        <!--Description-->
+        <div class="col text-center">
+          <h1 id="CEO_H1" class="display-4 text-center">CEO</h1>
+          <p id="CEO_P" class="font-weight-bold text-center">John Look , 26, has been the CEO for First Class Interiors
+            for 4 years.
+            Look is responsible for managing a company's overall operations which include delegating and directing
+            agendas, driving profitability, managing company organizational structure, strategy, and communicating with
+            the board. He ensures First Class Interiors runs at a profit and smoothly at all times. </p>
+          <button id="CEO_BTN" type="button" class="btn btn-dark" onclick="changeMD()">Click Me!</button>
+        </div>
+      </div>
+  </section>
+  <!--Head of Operations-->
+  <section>
+    <div class="container">
+      <div class="row" id="staff1" onmouseover="button1show()" onmouseout="button1hide()">
+        <!--Image-->
+        <div class="col">
+          <h1 class="display-5 text-center pt-2">Nathan Peter</h1>
+          <img id="staffimage1" class="rounded mx-auto d-block" src="/HTML/images/HOO.jpg" alt="COO Image" height="200">
+        </div>
+        <!--Description-->
+        <div class="col text-center">
+          <h1 class="display-4 text-center">Head of Operations</h1>
+          <p class="font-weight-bold text-center">Nathan Peter , 31, has been the Head of operations for Captivate
+            Interiors for 2 years. Nathan implements the policies and procedures of day-to-day operations that take
+            place in First Class Interiors. Nathan also ensures work environments are adequate and safe. Nathan also
+            oversees our departments and make sure they are meeting there goals.</p>
+          <button id="button1" type="button" class="btn btn-dark" onclick="hideStaff1()" mouseout="">Hide
+            Staff!</button>
+        </div>
+      </div>
+  </section>
+  <!--Head of Interior Design(Hotels)-->
+  <section>
+    <div class="container">
+      <div class="row" id="staff2" onmouseover="button2show()" onmouseout="button2hide()">
+        <!--Image-->
+        <div class="col">
+          <h1 class="display-5 text-center pt-2">Joe Doe</h1>
+          <img class="rounded mx-auto d-block" src="/HTML/images/directorhotelteam.jpg" alt="Director Joe Doe"
+            height="200" width="300.538">
+        </div>
+        <!--Description-->
+        <div class="col text-center">
+          <h1 class="display-4 text-center">Director(Hotel Team)</h1>
+          <p class="font-weight-bold text-center">Joe Doe , 41, has been a Director for Captivate
+            Interiors for 3 years, heading up our Hotel Interior design team. Joe makes sure that his team are meeting
+            there goals. He is responsible for overseaing that his team keeps up with the expectations of the Head of
+            Operations.</p>
+          <button id="button2" type="button" class="btn btn-dark" onclick="hideStaff2()" mouseout="">Hide
+            Staff!</button>
+        </div>
+      </div>
+  </section>
+  <!--Head of Interior Design(Resturants)-->
+  <section>
+    <div class="container">
+      <div class="row" id="staff3" onmouseover="button3show()" onmouseout="button3hide()">
+        <!--Image-->
+        <div class="col">
+          <h1 class="display-5 text-center pt-2">Luca de Meo</h1>
+          <img class="rounded mx-auto d-block" src="/HTML/images/headofteam.jpg" alt="Director Luca de meo" height="200"
+            width="300.538">
+        </div>
+        <!--Description-->
+        <div class="col text-center">
+          <h1 class="display-4 text-center">Director(Restaurant Team)</h1>
+          <p class="font-weight-bold text-center">Luca de Meo, 42, has been a Director for Captivate
+            Interiors for 4 years, heading up our Restaurant Interior design team. Luca makes sure that his team are
+            meeting
+            there goals. He is responsible for overseaing that his team keeps up with the expectations of the Head of
+            Operations.</p>
+          <button id="button3" type="button" class="btn btn-dark" onclick="hideStaff3()" mouseout="">Hide
+            Staff!</button>
+        </div>
+      </div>
+  </section>
+  <!--Head of Interior Design(Homes)-->
+  <section>
+    <div class="container">
+      <div class="row" id="staff4" onmouseover="button4show()" onmouseout="button4hide()">
+        <!--Image-->
+        <div class="col">
+          <h1 class="display-5 text-center pt-2">Ishaan Amar</h1>
+          <img class="rounded mx-auto d-block" src="/HTML/images/headofteam2.jpg" alt="Director Ishaan Amar"
+            height="200" width="300.538">
+        </div>
+        <!--Description-->
+        <div class="col text-center">
+          <h1 class="display-4 text-center">Director(Home Team)</h1>
+          <p class="font-weight-bold text-center">Ishaan Amar, 29, has been a Director for Captivate
+            Interiors for 5 years, heading up our Home Interior design team. Ishaan makes sure that his team are meeting
+            there goals. He is responsible for overseaing that his team keeps up with the expectations of the Head of
+            Operations.</p>
+          <button id="button4" type="button" class="btn btn-dark" onclick="hideStaff4()" mouseout="">Hide
+            Staff!</button>
+        </div>
+      </div>
+  </section>
+  <!--Head of Interior Design(Office)-->
+  <section>
+    <div class="container">
+      <div class="row" id="staff5" onmouseover="button5show()" onmouseout="button5hide()">
+        <!--Image-->
+        <div class="col">
+          <h1 class="display-5 text-center pt-2">Hannah Williams</h1>
+          <img class="rounded mx-auto d-block" src="/HTML/images/HeadofOfficeteam.jpg" alt="Director Hannah Williams"
+            height="200" width="300.538">
+        </div>
+        <!--Description-->
+        <div class="col text-center">
+          <h1 class="display-4 text-center">Director(Home Team)</h1>
+          <p class="font-weight-bold text-center">Hannah Williams, 29, has been a Director for Captivate
+            Interiors for 3 years, heading up our Office Interior design team. Hannah makes sure that her team are
+            meeting
+            there goals. She is responsible for overseaing that his team keeps up with the expectations of the Head of
+            Operations.</p>
+          <button id="button5" type="button" class="btn btn-dark" onclick="hideStaff5()">Hide Staff!</button>
+        </div>
+      </div>
+  </section>
+  <!--Footer-->
+  <div class="container my-5">
+    <footer class="text-center text-lg-start" style="background-color: #3F4E4F;">
+      <div class="container d-flex justify-content-center py-5">
+        <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4DCCF">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4DCCF;">
+          <i class="fab fa-youtube"></i>
+        </button>
+        <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4DCCF">
+          <i class="fab fa-instagram"></i>
+        </button>
+        <button type="button" class="btn  btn-lg btn-floating mx-2" style="background-color: #E4DCCF">
+          <i class="fab fa-twitter"></i>
+        </button>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="#">Captive Interiors</a>
+      </div>
+
+    </footer>
+  </div>
+  <!-- JS -->
+  <script>
+
+    //button4 hide default 
+    var button5_hide = document.getElementById('button5');
+    button5_hide.style.visibility = "hidden";
+    //button1 hide default 
+    var button1_hide = document.getElementById('button1');
+    button1_hide.style.visibility = "hidden";
+    //button2 hide default 
+    var button2_hide = document.getElementById('button2');
+    button2_hide.style.visibility = "hidden";
+    //button3 hide default 
+    var button3_hide = document.getElementById('button3');
+    button3_hide.style.visibility = "hidden";
+    //button4 hide default 
+    var button3_hide = document.getElementById('button4');
+    button4_hide.style.visibility = "hidden";
+
+    //Find all Elements for CEO to MD.
+    function changeMD() {
+      var CEO_HEADING = document.getElementById("CEO_H1");
+      var CEO_NAME = document.getElementById("CEO_NAME");
+      var CEO_IMAGE = document.getElementById("CEO_IMG");
+      var CEO_PARA = document.getElementById("CEO_P");
+      var CEO_BUTTON = document.getElementById("CEO_BTN");
+
+      if (CEO_NAME.textContent == "John Look") {
+        CEO_HEADING.innerHTML = "Managing director";
+        CEO_NAME.innerHTML = "Jack Williams";
+        CEO_IMAGE.src = "data:image/jpeg;base64,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";
+        CEO_PARA.innerHTML = "Jack Williams, 50, has been the Managing director for First Class Interiors for 4 years. Look is responsible for managing a company's overall operations which include delegating and directing agendas, driving profitability, managing company organizational structure, strategy, and communicating with the board. He ensures First Class Interiors runs at a profit and smoothly at all times.";
+        CEO_BUTTON.innerHTML = "CEO";
+      }
+      else {
+        CEO_HEADING.innerHTML = "CEO";
+        CEO_NAME.innerHTML = "John Look";
+        CEO_IMAGE.src = "data:image/jpeg;base64,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";
+        CEO_PARA.innerHTML = "John Look , 26, has been the CEO forsFirst Class Interiors for 4 years. Look is responsible for managing a company's overall operations which include delegating and directing agendas, driving profitability, managing company organizational structure, strategy, and communicating with the board. He ensures First Class Interiors runs at a profit and smoothly at all times. ";
+        CEO_BUTTON.innerHTML = "MD";
+      }
+    }
+    //Function to hide staff1 inforamtin such as image and description. 
+    function hideStaff1() {
+      var staffhide1 = document.getElementById('staff1');
+      var button1remove = document.getElementById('button1');
+      staff1.style.visibility = "hidden";
+      button1remove.style.visibility = "hidden";
+
+    }
+
+    //this functuon shows button after hover
+    function button1show() {
+      var showbutton10s = document.getElementById('button1');
+      showbutton10s.style.visibility = "visible";
+    }
+    //hide button when mouseout
+    function button1hide() {
+      var showbutton10s = document.getElementById('button1');
+      showbutton10s.style.visibility = "hidden";
+    }
+    /* For staff 2 */
+
+    function hideStaff2() {
+      var staffhide1 = document.getElementById('staff2');
+      var button1remove = document.getElementById('button2');
+      staff2.style.visibility = "hidden";
+      button2remove.style.visibility = "hidden";
+    }
+
+    //this functuon shows button after hover
+    function button2show() {
+      var showbutton2 = document.getElementById('button2');
+      showbutton2.style.visibility = "visible";
+    }
+    //hide button when mouseout
+    function button2hide() {
+      var showbutton2 = document.getElementById('button2');
+      showbutton2.style.visibility = "hidden";
+    }
+
+    /* For staff 3 */
+
+    function hideStaff3() {
+      var staffhide3 = document.getElementById('staff3');
+      var button3remove = document.getElementById('button3');
+      staff3.style.visibility = "hidden";
+      button3remove.style.visibility = "hidden";
+    }
+    //this functuon shows button after hover
+    function button3show() {
+      var showbutton3 = document.getElementById('button3');
+      showbutton3.style.visibility = "visible";
+    }
+    //hide button when mouseout
+    function button3hide() {
+      var showbutton3 = document.getElementById('button3');
+      showbutton3.style.visibility = "hidden";
+    }
+
+    /* For staff 4 */
+
+    function hideStaff4() {
+      var staffhide4 = document.getElementById('staff4');
+      var button3remove = document.getElementById('button4');
+      staff4.style.visibility = "hidden";
+      button4remove.style.visibility = "hidden";
+    }
+    //this functuon shows button after hover
+    function button4show() {
+      var showbutton4 = document.getElementById('button4');
+      showbutton4.style.visibility = "visible";
+    }
+    //hide button when mouseout
+    function button4hide() {
+      var hidebutton4 = document.getElementById('button4');
+      hidebutton4.style.visibility = "hidden";
+    }
+
+    /* For staff 5 */
+
+    function hideStaff5() {
+      var staffhide5 = document.getElementById('staff5');
+      var button5remove = document.getElementById('button5');
+      staff5.style.visibility = "hidden";
+      button5remove.style.visibility = "hidden";
+    }
+    //this functuon shows button after hover
+    function button5show() {
+      var showbutton5 = document.getElementById('button5');
+      showbutton5.style.visibility = "visible";
+    }
+    //hide button when mouseout
+    function button5hide() {
+      var hidebutton5 = document.getElementById('button5');
+      hidebutton5.style.visibility = "hidden";
+    }
+  </script>
+</body>
+
+</html>
