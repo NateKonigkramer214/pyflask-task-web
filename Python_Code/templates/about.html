@@ -48,7 +48,7 @@
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <div class=" float-sm-start">
-              <img src="/HTML/images/logo3.pn" alt="Logo" width="150" height="100">
+              <img src="{{ url_for('static', filename='HTML/images/logo3.png') }}" alt="Logo" width="150" height="100">
             </div>
             <span class="fs-4" style="color: #4ecca3;">First Class Interiors</span>
           </a>
@@ -81,7 +81,7 @@
         <!--Image-->
         <div class="col">
           <h1 id="CEO_NAME" class="display-5 text-center pt-2">John Look</h1>
-          <img id="CEO_IMG" class="rounded mx-auto d-block" src="/HTML/images/ceo.jpg" alt="CEO Image" height="200">
+          <img id="CEO_IMG" class="rounded mx-auto d-block" src="{{ url_for('static', filename='/HTML/images/ceo.jpg') }}" alt="CEO Image" height="200">
         </div>
         <!--Description-->
         <div class="col text-center">
@@ -102,7 +102,7 @@
         <!--Image-->
         <div class="col">
           <h1 class="display-5 text-center pt-2">Nathan Peter</h1>
-          <img id="staffimage1" class="rounded mx-auto d-block" src="/HTML/images/HOO.jpg" alt="COO Image" height="200">
+          <img id="staffimage1" class="rounded mx-auto d-block" src="{{ url_for('static', filename='/HTML/images/HOO.jpg') }}" alt="COO Image" height="200">
         </div>
         <!--Description-->
         <div class="col text-center">
@@ -123,7 +123,7 @@
         <!--Image-->
         <div class="col">
           <h1 class="display-5 text-center pt-2">Joe Doe</h1>
-          <img class="rounded mx-auto d-block" src="/HTML/images/directorhotelteam.jpg" alt="Director Joe Doe"
+          <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='/HTML/images/directorhotelteam.jpg') }}" alt="Director Joe Doe" 
             height="200" width="300.538">
         </div>
         <!--Description-->
@@ -145,7 +145,7 @@
         <!--Image-->
         <div class="col">
           <h1 class="display-5 text-center pt-2">Luca de Meo</h1>
-          <img class="rounded mx-auto d-block" src="/HTML/images/headofteam.jpg" alt="Director Luca de meo" height="200"
+          <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='/HTML/images/headofteam.jpg') }}" alt="Director Luca de meo" height="200"
             width="300.538">
         </div>
         <!--Description-->
@@ -168,7 +168,7 @@
         <!--Image-->
         <div class="col">
           <h1 class="display-5 text-center pt-2">Ishaan Amar</h1>
-          <img class="rounded mx-auto d-block" src="/HTML/images/headofteam2.jpg" alt="Director Ishaan Amar"
+          <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='/HTML/images/headofteam2.jpg') }}" alt="Director Ishaan Amar"
             height="200" width="300.538">
         </div>
         <!--Description-->
@@ -190,7 +190,7 @@
         <!--Image-->
         <div class="col">
           <h1 class="display-5 text-center pt-2">Hannah Williams</h1>
-          <img class="rounded mx-auto d-block" src="/HTML/images/HeadofOfficeteam.jpg" alt="Director Hannah Williams"
+          <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='/HTML/images/HeadofOfficeteam.jpg') }}" alt="Director Hannah Williams" 
             height="200" width="300.538">
         </div>
         <!--Description-->

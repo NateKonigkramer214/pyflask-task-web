@@ -30,10 +30,10 @@
     <header>
       <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <div class="class=" float-sm-start">
               <!-- Change 1: Changed logo and heading Color-->                                 
-              <img src="/HTML/images/logo3.png" alt="Logo" width="150"
+              <img src="{{ url_for('static', filename='HTML/images/logo3.png') }}" alt="Logo" width="150"
                 height="100">
             </div>
             <span style="color: #4ecca3;" class="fs-4">First Class Interiors</span>
@@ -67,7 +67,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/rest1.jpg" alt="Design 1" width="200"
+                      src="{{ url_for('static', filename='HTML/images/rest1.jpg') }}" alt="Design 1" width="200"
                       height="200">
                     <p>First Class Interiors completed the award winning design of the Le France Restaurant in 2020, which is an
                       exclusive restaurant in the heart of Paris.</p>
@@ -77,7 +77,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <h1 class="display-3">Restaurants</h1>
-                    <img class="rounded" src="/HTML/images/rest2.jpg"
+                    <img class="rounded" src="{{ url_for('static', filename='HTML/images/rest2.jpg') }}"
                       alt="Design 2" width="300" height="300">
                     <p>Modern bar and restaurant environment created by First Class Interiors for the Imperial Hotel in Atlanta.
                     </p>
@@ -87,7 +87,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/rest3.jpg" alt="Design 2" width="200"
+                      src="{{ url_for('static', filename='HTML/images/rest3.jpg') }}" alt="Design 2" width="200"
                       height="200">
                     <p>The exclusive Diva Restaurant combines both classic and modern interiors to provide an upmarket
                       environment fit for royality.</p>
@@ -104,7 +104,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/hotel1.jpg" alt="Design 1" width="200"
+                      src="{{ url_for('static', filename='HTML/images/hotel1.jpg') }}" alt="Design 1" width="200"
                       height="200">
                     <p>Classic bedroom interiors designed by First Class Interiors - Hotel Cassa</p>
                   </div>
@@ -113,7 +113,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <h1 class="display-3">Hotels</h1>
-                    <img class="rounded" src="/HTML/images/hotel2.jpg"
+                    <img class="rounded" src="{{ url_for('static', filename='HTML/images/hotel2.jpg') }}"
                       alt="Design 2" width="300" height="300">
                     <p>Modern bedroom interior design solutions for Imperial Hotel.</p>
                   </div>
@@ -122,7 +122,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/hotel3.jpg" alt="Design 2" width="200"
+                      src="{{ url_for('static', filename='HTML/images/hotel3.jpg') }}" alt="Design 2" width="200"
                       height="200">
                     <p>Award winning interior design of Empire Hotel main entrance and informal lounge and seating areas.</p>
                   </div>
@@ -137,7 +137,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/office2.jpg" alt="Design 1" width="200"
+                      src="{{ url_for('static', filename='HTML/images/office2.jpg') }}" alt="Design 1" width="200"
                       height="200">
                     <p>Modern office solutions delivered for Spectrum Inc by First Class Interiors, providing a creative and innovative open plan work environment.</p>
                   </div>
@@ -146,7 +146,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <h1 class="display-3">Offices</h1>
-                    <img class="rounded" src="/HTML/images/office3.jpg"
+                    <img class="rounded" src="{{ url_for('static', filename='HTML/images/office3.jpg') }}"
                       alt="Design 2" width="300" height="300">
                     <p>Classic interior solution for collaborative and formal meeting requirements at Alexander Trading Limited.</p>
                   </div>
@@ -155,7 +155,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/rest1.jpg" alt="Design 2" width="200"
+                      src="{{ url_for('static', filename='HTML/images/rest1.jpg') }}" alt="Design 2" width="200"
                       height="200">
                     <p>Creative work spaces designed by the award winning interior designers at First Class Interiors.</p>
                   </div>
@@ -171,7 +171,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/home1.jpg" alt="Design 1" width="200"
+                      src="{{ url_for('static', filename='HTML/images/home1.jpg') }}" alt="Design 1" width="200"
                       height="200">
                     <p>Transformation of existing living spaces with modern and creative design solutions.</p>
                   </div>
@@ -180,7 +180,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <h1 class="display-3">Homes</h1>
-                    <img class="rounded" src="/HTML/images/home2.jpg"
+                    <img class="rounded" src="{{ url_for('static', filename='HTML/images/home2.jpg') }}"
                       alt="Design 2" width="300" height="300">
                     <p>Interior designs for new homes, creating comfortable classic spaces.</p>
                   </div>
@@ -189,7 +189,7 @@
                 <div class="col-sm">
                   <div class="text-center">
                     <img style="margin-top: 130px;" class="rounded"
-                      src="/HTML/images/home3.jpg" alt="Design 2" width="200"
+                      src="{{ url_for('static', filename='HTML/images/home3.jpg') }}" alt="Design 2" width="200"
                       height="200">
                     <p>Creative designs incorporating and blend of a classic neutral and modern colour palete. </p>
                   </div>
