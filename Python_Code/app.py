@@ -18,6 +18,10 @@ def contact():
 def shop():
     return render_template('shop.html')
 
+@app.route('/HTML/login.html')
+def login():
+    return render_template('login.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
